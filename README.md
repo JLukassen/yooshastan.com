@@ -1,52 +1,52 @@
-# Yoo Shastan — Independent Software Studio
+# Yoo Shastan — Independent Android App Studio
 
-A standalone, static website for **yooshastan.com**, hosted on GitHub Pages. No framework, backend, JavaScript build, or server needed. Responsive, accessible site with projects for Moka Music Player and KPOPALYPSE NOW.
-
-## Publish via GitHub Pages
-
-1. Create a **new public repository** named `yooshastan.com` under GitHub account `JLukassen`. Keep it **separate** from `kpopalypsenow.com`, which already owns another custom domain.
-2. Upload all files in this folder to the **root** of the new repository on `main` (including `index.html`, `styles.css`, `script.js`, `favicon.svg`, `CNAME`, `.nojekyll`).
-3. In the new repository, visit **Settings → Pages** → **Build and deployment** → **Deploy from a branch** → choose `main` and `/(root)` → Save.
-4. Under **Settings → Pages → Custom domain**, enter `yooshastan.com` and save. The root `CNAME` file already contains that value.
-5. At your domain registrar / DNS provider, set the DNS records below; remove *conflicting* parked/old A or AAAA records for `@` (but don't delete MX, TXT, DKIM or other services without checking):
-
-| Type | Name | Value |
-| --- | --- | --- |
-| A | @ | 185.199.108.153 |
-| A | @ | 185.199.109.153 |
-| A | @ | 185.199.110.153 |
-| A | @ | 185.199.111.153 |
-| CNAME | www | JLukassen.github.io |
-
-Optional: GitHub also supports IPv6 `AAAA` records for the apex domain. You can add them later when needed. Don't use a wildcard DNS record. The CNAME **DNS record** for `www` is different from the `CNAME` **file** for the apex domain.
-
-6. Wait for DNS to resolve, return to **Settings → Pages** and enable **Enforce HTTPS** when offered. DNS changes can take up to 24 hours, and certificates may take additional time.
-7. Confirm both `https://yooshastan.com/` and `https://www.yooshastan.com/` redirect to the intended site securely.
-
-Validate DNS from Fedora:
-
-```bash
-dig yooshastan.com +short A
-dig www.yooshastan.com +short CNAME
-```
-
-Official GitHub guidance: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
+Standalone static site designed for **yooshastan.com**. The **public webpage** intentionally contains no real name, personal portfolio links, personal contact details, or GitHub profile/repository links. Its project page for Moka does not link back to a personal development account.
 
 ## Preview locally
+
+From this directory:
 
 ```bash
 python3 -m http.server 8080
 ```
 
-Visit `http://localhost:8080/` from the same folder.
+Then open http://localhost:8080/ in your browser.
 
-## Updating project links
+## Publish on GitHub Pages using a separate studio identity
 
-Edit the appropriate anchor links in `index.html`. The page intentionally does not display an active donation or sponsorship link without a verified payment page.
+**Important:** To reduce public attribution, do not host this site under a GitHub account with your real name. A custom domain alone does not hide the GitHub Pages repository or account ownership, and DNS / GitHub records can still reveal technical links. True anonymity is not guaranteed.
 
-## Relation to other sites
+1. Create a separate studio-branded GitHub account (or choose an alternative host that allows a private source repository and custom domains). Follow the hosting provider's terms for account details.
+2. Create a **new, separate site repository** there (for example `yooshastan.com`). Don't alter the existing KPOPALYPSE NOW repository.
+3. Upload the root files of this folder to your chosen site repo: `index.html`, `styles.css`, `script.js`, `favicon.svg`, `CNAME`, `.nojekyll`.
+4. In repository **Settings → Pages**, select **Deploy from a branch** and choose the primary branch's **root** directory. Enter `yooshastan.com` under **Custom domain**.
+5. At your DNS provider, create these GitHub Pages apex records and remove **only conflicting website** records (keep email MX/TXT/etc.):
 
-- **yooshastan.com** — studio / future projects hub (this repository)
-- **jonlukassen.com** — developer portfolio and career page (separate repository/hosting)
-- **kpopalypsenow.com** — K-pop project (separate GitHub Pages repository)
-- **Moka Music Player** — Android app and releases at https://github.com/JLukassen/MokaMusicPlayer
+| Type | Host | Value |
+| --- | --- | --- |
+| A | @ | 185.199.108.153 |
+| A | @ | 185.199.109.153 |
+| A | @ | 185.199.110.153 |
+| A | @ | 185.199.111.153 |
+| CNAME | www | YOUR_STUDIO_ACCOUNT.github.io |
+
+Replace `YOUR_STUDIO_ACCOUNT` with the **new studio GitHub username**, not your personal account. The root `CNAME` **file** already contains `yooshastan.com`.
+6. When DNS resolves, turn on **Enforce HTTPS** in Pages settings. Check `https://yooshastan.com/` and the `www` redirect.
+
+GitHub Pages guide: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
+
+## Protecting your identity
+
+- Consider domain-registration privacy (RDAP/WHOIS redaction), a domain registrar that offers privacy protection, and a separate brand contact address.
+- Links to this studio from a personal portfolio are permitted by your chosen one-way linking strategy, but they can still let visitors correlate the studio with the portfolio owner. Do not claim that the project is technically untraceable or fully anonymous.
+- Existing Android project listings, accounts, repositories and app-store records may still reveal authorship through cross-links, RDAP history, metadata, or publicly accessible developer information. **Do not interpret this website as guaranteeing anonymity.**
+- Before adding a donation provider or Play Store link, review which legal/business names or contact details it publicly displays.
+- Use privacy-conscious analytics or none at all. This static website has no analytics or user tracking.
+
+## Updates
+
+Add future **Android app** projects inside `index.html`. Keep non-Android projects on separate sites. No framework or build step is required; push changes to your hosting repo. Add contact/donation links only when you have independent studio accounts whose public identity you have checked. The Moka project currently shows a public beta status without linking to the real-name GitHub repository.
+
+## Editorial scope
+
+This website exclusively features **Android applications**. Its first listed app is **Moka Music Player**. Other websites or creative projects are intentionally excluded; there are no outgoing links to the studio owner's personal domain or GitHub account.
