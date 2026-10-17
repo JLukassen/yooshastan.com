@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#0b0d11">
+<meta name="description" content="Moka Music Player by Yoo Shastan: local lossless Android playback, powerful DSP and optional Navidrome streaming.">
+<meta property="og:title" content="Moka Music Player — Yoo Shastan">
+<meta property="og:description" content="High-fidelity audio, your music library and your sound. Coming to Uptodown and direct APK distribution.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yooshastan.com/moka/">
+<link rel="canonical" href="https://yooshastan.com/moka/">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<title>Moka Music Player · Yoo Shastan</title>
+<style>
+:root{color-scheme:dark;--bg:#0b0d11;--surface:#171b21;--line:#353940;--text:#f6f3eb;--muted:#b3b5bd;--bronze:#f4ad70}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.65 system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--bronze)}a:hover{text-decoration-thickness:2px}
+.page{max-width:1160px;margin:auto;padding:24px 28px 88px}
+header{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 0 27px;border-bottom:1px solid var(--line)}
+.brand{text-decoration:none;letter-spacing:.08em;font-weight:800;font-size:18px;color:var(--text)}.brand span{color:var(--bronze)}.nav{display:flex;gap:18px;flex-wrap:wrap;font-size:14px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:50px;padding:95px 0 78px}
+.eyebrow{font-size:12px;font-weight:800;letter-spacing:.18em;color:var(--bronze);text-transform:uppercase}
+h1{font-size:clamp(48px,7vw,82px);line-height:1.04;letter-spacing:-.06em;margin:18px 0}
+h2{font-size:clamp(27px,4vw,39px);line-height:1.14;letter-spacing:-.035em;margin:10px 0 16px}
+.lead{max-width:590px;color:#ccd0d8;font-size:19px;line-height:1.77;margin:0 0 25px}
+.pills{display:flex;gap:10px;flex-wrap:wrap}.pills span{font-size:12px;letter-spacing:.04em;border:1px solid #534232;border-radius:100px;padding:7px 12px;background:#f4ad7010}
+.symbol{min-height:360px;display:flex;align-items:center;justify-content:center;border:1px solid #66503d;border-radius:20px;background:radial-gradient(circle at 50% 45%,#70412e70 0%,#171a20 42%,#101217 79%);box-shadow:0 28px 70px #0009;position:relative;overflow:hidden}
+.symbol:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,transparent 0 32px,#ffffff08 33px 34px)}
+.symbol-inner{position:relative;width:168px;height:168px;border:2px solid #d7874d;border-radius:40px;background:linear-gradient(130deg,#2d1d14,#0b0d10 70%);display:flex;justify-content:center;align-items:center;font-size:110px;font-weight:800;line-height:1;background:linear-gradient(135deg,#da834a 1%,#ffd5a2 30%,#8f4b2b 72%,#efb67e 95%);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:0 10px 40px #ec944b16}
+.symbol-caption{position:absolute;bottom:25px;left:26px;font-size:11px;color:#cfa27e;letter-spacing:.2em}
+section{padding:26px 0 42px;border-top:1px solid var(--line)}
+.features{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.feature,.release-card{border-radius:14px;border:1px solid #363a41;background:var(--surface);padding:25px}
+.feature h3,.release-card h3{font-size:20px;margin:0 0 10px}
+.feature p,.release-card p,.section-intro{color:var(--muted);margin:0}
+.downloads{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:28px 0}
+.release-card{min-height:186px;display:flex;flex-direction:column;align-items:flex-start;gap:9px}
+.status{font-size:11px;text-transform:uppercase;font-weight:800;letter-spacing:.12em;color:#f0bb8d}
+.note{border-left:3px solid var(--bronze);padding:10px 17px;margin-top:12px;color:#bfc4ca;font-size:14px}
+footer{border-top:1px solid var(--line);margin-top:36px;padding-top:28px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:18px;color:#989da4;font-size:14px}
+@media(max-width:760px){.hero{grid-template-columns:1fr;gap:20px;padding-top:56px}.symbol{min-height:260px}.features,.downloads{grid-template-columns:1fr}.page{padding-inline:18px}.nav{justify-content:flex-end}}
+</style>
+</head>
+<body>
+<div class="page">
+<header><a class="brand" href="/">YOO<span>.</span>SHASTAN</a><nav class="nav" aria-label="Page navigation"><a href="#features">Features</a><a href="#downloads">Downloads</a><a href="privacy/">Privacy</a></nav></header>
+<main>
+<div class="hero">
+<div><div class="eyebrow">Yoo Shastan · Android audio · Beta 6</div><h1>Moka Music<br>Player<span style="color:var(--bronze)">.</span></h1><p class="lead">Your music. Your sound. A local-first Android music player combining lossless playback, precise audio controls and optional streaming from your own music server.</p><div class="pills"><span>FLAC + WAV</span><span>Native DSP</span><span>Headphone tuning</span><span>Navidrome</span></div></div>
+<div class="symbol" aria-label="Abstract copper Moka audio brand artwork" role="img"><div class="symbol-inner">M</div><div class="symbol-caption">PURE AUDIO / YOUR RULES</div></div>
+</div>
+
+<section id="features" aria-labelledby="features-title"><div class="eyebrow">01 / What you get</div><h2 id="features-title">Designed around how you listen.</h2>
+<div class="features">
+<article class="feature"><h3>Your local music</h3><p>Browse your existing library by track, album and artist. Enjoy supported lossless files without a cloud account.</p></article>
+<article class="feature"><h3>Sound that you shape</h3><p>Adjust equalization, convolution and compatible headphone corrections. Save presets and listening profiles.</p></article>
+<article class="feature"><h3>Your server, your library</h3><p>Connect to a compatible HTTPS Navidrome/Subsonic server when you choose. Browse and shuffle hosted music alongside local tracks.</p></article>
+</div></section>
+
+<section id="downloads" aria-labelledby="downloads-title">
+<div class="eyebrow">02 / Distribution</div><h2 id="downloads-title">Get Moka Music Player</h2>
+<p class="section-intro">We're preparing the production-signed Android APK for independent distribution. Downloads will be activated after testing, package verification and store approval.</p>
+<div class="downloads">
+<article class="release-card"><div class="status">Uptodown · Preparing submission</div><h3>Get it from Uptodown</h3><p>The official listing link will appear here once Uptodown completes its review. No listing is claimed to be live yet.</p></article>
+<article class="release-card"><div class="status">Direct Android APK · Coming soon</div><h3>Install directly</h3><p>A verified release APK download, SHA-256 checksum and signing certificate details will appear here when published.</p></article>
+</div>
+<p class="note">Moka Beta 6 targets Android 8.0+ on supported 64-bit devices. Installing an APK from another source may require Android's permission for that source. Existing debug-signed installations may not update in place with a different release certificate; preserve app data before switching builds.</p>
+</section>
+
+<section aria-labelledby="privacy-title"><div class="eyebrow">03 / Your music stays yours</div><h2 id="privacy-title">Local-first by design.</h2><p class="section-intro">Moka reads your own audio files and performs DSP and loudness analysis on your device. Network streaming and online metadata services are optional. <a href="privacy/">Read the Moka privacy policy</a>.</p></section>
+</main>
+<footer><span>© 2026 Yoo Shastan · Independent Android apps</span><span><a href="/">Studio home</a> · <a href="privacy/">Privacy policy</a></span></footer>
+</div>
+</body>
+</html>
