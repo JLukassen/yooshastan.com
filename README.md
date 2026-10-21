@@ -45,8 +45,8 @@ GitHub Pages guide: https://docs.github.com/en/pages/configuring-a-custom-domain
 
 ## Updates
 
-Add future **Android app** projects inside `index.html`. Keep non-Android projects on separate sites. No framework or build step is required; push changes to your hosting repo. Add contact/donation links only when you have independent studio accounts whose public identity you have checked. The Moka project currently shows a public beta status without linking to the real-name GitHub repository.
+Add future **Android app** projects inside `index.html`. A small, clearly labeled **past experiments** section may feature legacy Android system utilities. Keep non-Android projects on separate sites. No framework or build step is required; push changes to your hosting repo. Add contact/donation links only when you have independent studio accounts whose public identity you have checked. The Moka project currently shows a public beta status without linking to the real-name GitHub repository.
 
 ## Editorial scope
 
-This website exclusively features **Android applications**. Its first listed app is **Moka Music Player**. Other websites or creative projects are intentionally excluded; there are no outgoing links to the studio owner's personal domain or GitHub account.
+This website primarily features **Android applications**, led by **Moka Music Player**, with a small, clearly labeled section for earlier Android system experiments such as the APatch-compatible Tinymix utility adaptation. Third-party tools are credited without suggesting original authorship. Older experimental work is not presented as a maintained download. Other websites or creative projects are excluded; there are no outgoing links to the studio owner's personal domain or GitHub account.
