@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#0b0d11">
 <meta name="description" content="Moka Music Player by Yoo Shastan: local lossless Android playback, powerful DSP and optional Navidrome streaming.">
 <meta property="og:title" content="Moka Music Player — Yoo Shastan">
-<meta property="og:description" content="High-fidelity audio, your music library and your sound. Coming to Uptodown and direct APK distribution.">
+<meta property="og:description" content="High-fidelity audio, your music library and your sound. Beta 6 test APK available for direct download.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://yooshastan.com/moka/">
 <link rel="canonical" href="https://yooshastan.com/moka/">
@@ -37,7 +37,7 @@ section{padding:26px 0 42px;border-top:1px solid var(--line)}
 .downloads{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:28px 0}
 .release-card{min-height:186px;display:flex;flex-direction:column;align-items:flex-start;gap:9px}
 .status{font-size:11px;text-transform:uppercase;font-weight:800;letter-spacing:.12em;color:#f0bb8d}
-.note{border-left:3px solid var(--bronze);padding:10px 17px;margin-top:12px;color:#bfc4ca;font-size:14px}
+.download-button{display:inline-block;margin:15px 0 10px;padding:12px 17px;border-radius:9px;background:var(--bronze);color:#16110c;font-weight:800;text-decoration:none}.download-button:hover{background:#ffd0a5}.note{border-left:3px solid var(--bronze);padding:10px 17px;margin-top:12px;color:#bfc4ca;font-size:14px}
 footer{border-top:1px solid var(--line);margin-top:36px;padding-top:28px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:18px;color:#989da4;font-size:14px}
 @media(max-width:760px){.hero{grid-template-columns:1fr;gap:20px;padding-top:56px}.symbol{min-height:260px}.features,.downloads{grid-template-columns:1fr}.page{padding-inline:18px}.nav{justify-content:flex-end}}
 </style>
@@ -60,12 +60,12 @@ footer{border-top:1px solid var(--line);margin-top:36px;padding-top:28px;display
 
 <section id="downloads" aria-labelledby="downloads-title">
 <div class="eyebrow">02 / Distribution</div><h2 id="downloads-title">Get Moka Music Player</h2>
-<p class="section-intro">We're preparing the production-signed Android APK for independent distribution. Downloads will be activated after testing, package verification and store approval.</p>
+<p class="section-intro">Download the current Beta 6 test build below. It is debug-signed for device testing, not a production-signed or app-store release.</p>
 <div class="downloads">
 <article class="release-card"><div class="status">Uptodown · Preparing submission</div><h3>Get it from Uptodown</h3><p>The official listing link will appear here once Uptodown completes its review. No listing is claimed to be live yet.</p></article>
-<article class="release-card"><div class="status">Direct Android APK · Coming soon</div><h3>Install directly</h3><p>A verified release APK download, SHA-256 checksum and signing certificate details will appear here when published.</p></article>
+<article class="release-card"><div class="status">Beta 6 · Debug-signed APK</div><h3>Install directly</h3><p>Version 4.0.0-beta06 · Android test build (24.5 MB). <a href="https://github.com/yooshastan/MokaMusicPlayer/releases/download/v4.0.0-beta06/Moka-Music-Player-4.0.0-beta06-debug.apk" class="download-button" download>↓ Download Beta 6 APK</a> <a href="https://github.com/yooshastan/MokaMusicPlayer/releases/download/v4.0.0-beta06/SHA256SUMS.txt">SHA-256 checksum file</a>.</p></article>
 </div>
-<p class="note">Moka Beta 6 targets Android 8.0+ on supported 64-bit devices. Installing an APK from another source may require Android's permission for that source. Existing debug-signed installations may not update in place with a different release certificate; preserve app data before switching builds.</p>
+<p class="note">Moka Beta 6 targets Android 8.0+ on supported 64-bit devices. Installing an APK from another source may require Android's permission for that source. This is a debug-signed prerelease, not a production build. An existing installation signed with a different certificate may reject an in-place update; back up settings and data before switching builds.</p>
 </section>
 
 <section aria-labelledby="privacy-title"><div class="eyebrow">03 / Your music stays yours</div><h2 id="privacy-title">Local-first by design.</h2><p class="section-intro">Moka reads your own audio files and performs DSP and loudness analysis on your device. Network streaming and online metadata services are optional. <a href="privacy/">Read the Moka privacy policy</a>.</p></section>
