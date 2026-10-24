@@ -17,3 +17,20 @@
 .inspector-trace span:nth-child(2),.inspector-trace span:nth-child(4){height:34px}.inspector-trace span:nth-child(3){height:23px}
 .chip-dev{border-color:#426578;color:#a1d9e7}.chip-dev i{background:#6acfe3;box-shadow:0 0 10px #6acfe355}
 @media(min-width:861px){.project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.project-visual{height:290px}}
+
+
+/* Ultgram project feature — concept art, not an in-app screenshot */
+.ult-card{border-color:#554063}
+.ult-card:hover{border-color:#d476bf}
+.ult-visual{background:radial-gradient(circle at 52% 51%,#693376 0%,#311b49 44%,#171523 78%);border-bottom:1px solid #784775}
+.ult-visual::before{content:"";position:absolute;inset:0;background-image:linear-gradient(#ffffff0d 1px,transparent 1px),linear-gradient(90deg,#ffffff0d 1px,transparent 1px);background-size:34px 34px}
+.ult-visual .visual-topline,.ult-visual .visual-corner{color:#f5cbea}
+.ult-orbit{position:absolute;left:50%;top:51%;transform:translate(-50%,-50%);border:1px solid #cb86cb75;border-radius:50%;aspect-ratio:1}
+.ult-orbit-a{width:265px}.ult-orbit-b{width:380px;border-color:#6be4e255}
+.ult-mark{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#ffe0f5;font:800 76px/1 var(--space);letter-spacing:-7px;text-shadow:0 0 42px #fc75d080}
+.ult-mark span{font-size:39px;letter-spacing:0;align-self:center;color:#81ece5;margin-left:6px}
+.chip-ult{border-color:#85517c;color:#ffd0ed}.chip-ult i{background:#ff8dcb;box-shadow:0 0 10px #ff8dcb70}
+.ult-card .project-links a{color:#ffacd9}
+@media(min-width:861px){.ult-card{grid-column:1/-1;display:grid;grid-template-columns:.95fr 1.05fr}.ult-card .project-visual{height:auto;min-height:300px;border-bottom:0;border-right:1px solid #784775}.ult-card .project-info{display:flex;flex-direction:column;justify-content:center}.ult-card .project-links{margin-top:18px}}
+@media(max-width:860px){.ult-card .project-visual{height:310px}}
+@media(max-width:550px){.ult-card .project-visual{height:255px}.ult-mark{font-size:62px}.ult-mark span{font-size:29px}}
